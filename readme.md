@@ -9,9 +9,12 @@ git clone --depth 1 https://github.com/vdegenne/lit-typescript-starter.git appna
 ```bash
 cd appname
 ```
-### Remove the git directory and install the deps
+### Remove the git directory
 ```bash
 rm -rf .git
+```
+### Verify the deps in `package.json` (remove the `koa` deps if you only need a static app) then install the deps
+```bash
 npm i
 ```
 ### open the project in your fav IDE
