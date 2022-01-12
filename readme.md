@@ -27,13 +27,14 @@ code .
 ## Set up
 
 - Change `%appname%` in `package.json`, `pm2.config.js` and `public/index.html`
+- Watch for changes `npm run watch`
 
 ### If you don't need the server
 
-- Start a local server (watching changes) with `npm run browser-sync:static`
+- Start a local server (reloading the page every time the app is recompiled) with `npm run browser-sync:static`
 
 ### If you need the server (koa)
 
 - Change the port in `server.js` and `%port%` in `package.json`
-- You can use `pm2 start pm2.config.js` to start the server and watch for the change in `server.js` (the server will automatically restart)
+- You can use `pm2 start pm2.config.js` to start the server and watch for changes in `server.js` (the server will automatically restart)
 - Use `npm run browser-sync` instead of `browser-sync:static`
