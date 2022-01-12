@@ -9,7 +9,7 @@ git clone --depth 1 https://github.com/vdegenne/lit-typescript-starter.git appna
 ```bash
 cd appname
 ```
-### Remove the git directory
+### remove the git directory
 ```bash
 rm -rf .git
 ```
@@ -22,4 +22,18 @@ npm i
 code .
 ```
 
-<span color="red">replace this readme with your project's one</span>
+
+
+## Set up
+
+- Change `%appname%` in `package.json`, `pm2.config.js` and `public/index.html`
+
+### If you don't need the server
+
+- Start a local server (watching changes) with `npm run browser-sync:static`
+
+### If you need the server (koa)
+
+- Change the port in `server.js` and `%port%` in `package.json`
+- You can use `pm2 start pm2.config.js` to start the server and watch for the change in `server.js` (the server will automatically restart)
+- Use `npm run browser-sync` instead of `browser-sync:static`
