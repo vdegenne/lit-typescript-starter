@@ -1,4 +1,4 @@
-const Koa = requrie('koa')
+const Koa = require('koa')
 const Router = require('koa-router')
 const statics = require('koa-static')
 const koaBody = require('koa-body')
