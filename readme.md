@@ -26,7 +26,7 @@ code .
 
 ## Set up
 
-- Change `%appname%` in `package.json`, `pm2.config.js` and `public/index.html`
+- Replace `%appname%` with your app name in all your project
 - Watch for changes `npm run watch`
 
 ### If you don't need the server
@@ -35,6 +35,10 @@ code .
 
 ### If you need the server (koa)
 
-- Change the port in `server.js` and `%port%` in `package.json`
+- Replace `%port%` with the wished port in all your project
 - You can use `pm2 start pm2.config.js` to start the server and watch for changes in `server.js` (the server will automatically restart)
 - Use `npm run browser-sync` instead of `browser-sync:static`
+
+## Tmux
+
+If you are using tmux, just edit and run `./tmux.sh`. It'll run the watch process and browser-sync.

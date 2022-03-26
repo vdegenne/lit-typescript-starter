@@ -3,12 +3,12 @@ const Router = require('koa-router')
 const statics = require('koa-static')
 const koaBody = require('koa-body')
 
-const port = 36231
+const port = %port%
 const app = new Koa
 const router = new Router
 
 app.use(koaBody())
-app.use(statics('public'))
+app.use(statics('docs'))
 
 router.get('/ping', function (ctx) {
   return ctx.body = 'pong'
