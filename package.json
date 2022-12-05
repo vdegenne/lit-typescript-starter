@@ -1,5 +1,5 @@
 {
-  "name": "quote-me",
+  "name": "%appname%",
   "type": "module",
   "devDependencies": {
     "@material/mwc-button": "^0.27.0",
@@ -25,7 +25,7 @@
     "watch": "rollup -cw",
     "watch:server": "pm2 start pm2.config.js",
     "browser-sync:static": "browser-sync docs --files docs/app.js --no-notify",
-    "browser-sync": "browser-sync start --proxy http://localhost:43661/ --files docs/app.js --no-notify"
+    "browser-sync": "browser-sync start --proxy http://localhost:%port%/ --files docs/app.js --no-notify"
   },
   "dependencies": {
     "koa": "^2.13.4",
