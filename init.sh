@@ -2,6 +2,8 @@
 
 set -e
 
+read -p "If you need backend support make sure to modify tmux.sh before proceeding! (^C to cancel)"
+
 rm -rf .git
 rm -f readme.md
 
