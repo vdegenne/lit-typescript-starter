@@ -1,35 +1,36 @@
 {
-  "name": "%appname%",
+  "name": "quote-me",
+  "type": "module",
   "devDependencies": {
-    "@material/mwc-button": "^0.25.3",
-    "@material/mwc-checkbox": "^0.25.3",
-    "@material/mwc-dialog": "^0.25.3",
-    "@material/mwc-icon-button": "^0.25.3",
-    "@material/mwc-select": "^0.25.3",
-    "@material/mwc-snackbar": "^0.25.3",
-    "@material/mwc-tab-bar": "^0.25.3",
-    "@material/mwc-textarea": "^0.25.3",
-    "@material/mwc-textfield": "^0.25.3",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.1.3",
-    "@rollup/plugin-typescript": "^8.3.0",
-    "browser-sync": "^2.27.7",
-    "lit": "^2.1.1",
-    "rollup": "^2.63.0",
+    "@material/mwc-button": "^0.27.0",
+    "@material/mwc-checkbox": "^0.27.0",
+    "@material/mwc-dialog": "^0.27.0",
+    "@material/mwc-icon-button": "^0.27.0",
+    "@material/mwc-select": "^0.27.0",
+    "@material/mwc-snackbar": "^0.27.0",
+    "@material/mwc-tab-bar": "^0.27.0",
+    "@material/mwc-textarea": "^0.27.0",
+    "@material/mwc-textfield": "^0.27.0",
+    "@rollup/plugin-json": "^5.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "browser-sync": "^2.27.10",
+    "lit": "^2.4.1",
+    "rollup": "^3.5.1",
     "rollup-plugin-terser": "^7.0.2",
-    "typescript": "^4.5.4"
+    "typescript": "^4.9.3"
   },
   "scripts": {
     "build": "rollup -c --environment minify",
     "watch": "rollup -cw",
     "watch:server": "pm2 start pm2.config.js",
     "browser-sync:static": "browser-sync docs --files docs/app.js --no-notify",
-    "browser-sync": "browser-sync start --proxy http://localhost:%port%/ --files docs/app.js --no-notify"
+    "browser-sync": "browser-sync start --proxy http://localhost:43661/ --files docs/app.js --no-notify"
   },
   "dependencies": {
     "koa": "^2.13.4",
-    "koa-body": "^4.2.0",
-    "koa-router": "^10.1.1",
+    "koa-body": "^6.0.1",
+    "koa-router": "^12.0.0",
     "koa-static": "^5.0.0"
   }
 }
